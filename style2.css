@@ -1,0 +1,422 @@
+/* Responsive for smaller screens */
+@media (max-width: 768px) {
+    header nav {
+        display: none;
+        flex-direction: column;
+        background-color: #333;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        padding: 10px 0;
+        border-radius: 0 0 10px 10px;
+    }
+
+    header nav.active {
+        display: flex;
+    }
+
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul li {
+        margin: 10px 0;
+    }
+
+    header .menu-toggle {
+        display: flex;
+    }
+
+    header .logo a {
+        font-size: 1.5rem;
+    }
+}
+
+/* Dropdown and Submenu */
+header .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    width: 200px;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    top: 100%;
+}
+
+header .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+header .submenu-content {
+    display: none;
+    background-color: #444;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+header .dropdown-submenu:hover .submenu-content {
+    display: block;
+}
+
+header .submenu-content a {
+    padding: 12px;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/*Hero Section*/
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-content p {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+	
+	.controls span {
+		font-size: 2rem;
+	}	
+	
+	.controls .prev {
+		margin-left: 10px;
+	}
+	
+	.controls .next {
+		margin-right: 10px;
+	}
+	
+}
+
+/* Featured Section */
+@media (max-width: 768px) {
+  .featured-section {
+    padding: 30px 10px;
+  }
+
+  .product-image {
+    height: 300px;
+  }
+  
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-card {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .product-image {
+    height: 300px;
+  }
+
+  .add-to-cart-btn {
+    font-size: 0.9rem;
+    padding: 8px 16px;
+  }
+}
+
+/*Categories Section*/
+@media (max-width: 768px) {
+  .categories-section {
+    padding: 30px 10px;
+  }
+
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .category-card {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+
+@media (max-width: 576px) {
+  .category-card {
+    width: 100%;
+  }
+
+  .category-name {
+    font-size: 1rem;
+    padding: 3px 8px;
+  }
+}
+
+/* New Arrivals Section*/
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 28px;
+  }
+
+  .product-card {
+    margin: 10px 0;
+  }
+
+  .product-image {
+    height: 180px;
+  }
+
+  .product-name {
+    font-size: 16px;
+  }
+
+  .product-price {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .section-title {
+    font-size: 24px;
+  }
+
+  .product-image {
+    height: 150px;
+  }
+
+  .product-name {
+    font-size: 14px;
+  }
+
+  .product-price {
+    font-size: 12px;
+  }
+}
+
+/* Newsletter Section Responsive */
+@media (max-width: 768px) {
+  .newsletter .section-title {
+    font-size: 28px;
+  }
+
+  .newsletter-text {
+    font-size: 16px;
+  }
+
+  .newsletter-form {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .email-input {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .subscribe-btn {
+    width: 100%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 576px) {
+  .newsletter .section-title {
+    font-size: 24px;
+  }
+
+  .newsletter-text {
+    font-size: 14px;
+  }
+}
+
+
+/* Footer Responsive Design */
+@media (max-width: 768px) {
+  .footer-top {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer-links {
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+  }
+
+  .social-icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 576px) {
+  .footer {
+    padding: 40px 10px;
+  }
+
+  .footer-links a {
+    font-size: 14px;
+  }
+
+  .footer-brand h2 {
+    font-size: 24px;
+  }
+
+  .social-icon {
+    font-size: 18px;
+    width: 35px;
+    height: 35px;
+  }
+}
+
+
+/*Shop Page*/
+@media (max-width: 1200px) {
+  .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* About Us */
+@media (max-width: 768px) {
+  .why-choose-us .features {
+    flex-direction: column;
+  }
+
+  .testimonial-cards {
+    flex-direction: column;
+  }
+
+  .brand-story img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-about .hero-text h1 {
+    font-size: 2rem;
+  }
+
+  .hero-about .hero-text p {
+    font-size: 1rem;
+  }
+}
+
+
+/* Contact Us */
+@media (max-width: 768px) {
+    .contact-details .details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact-details .detail {
+        margin-bottom: 20px;
+    }
+}
+
+/* Cart page*/
+@media (max-width: 768px) {
+    .cart-table th, .cart-table td {
+        font-size: 14px;
+    }
+
+    .cart-summary {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cart-summary .checkout-btn {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
+
+
+/* Checkout page */
+@media (max-width: 768px) {
+    .checkout {
+        padding: 20px;
+    }
+	#checkout-form{
+		padding: 20px;
+	}
+
+    .checkout h2 {
+        font-size: 24px;
+    }
+
+    .checkout .order-summary {
+        margin-top: 20px;
+    }
+
+    .checkout .summary-item p {
+        font-size: 14px;
+    }
+}
+
+
+/* User Account */
+/* Responsive Design */
+@media (max-width: 768px) {
+    .account-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form-container {
+        width: 90%;
+    }
+
+    .user-account h2 {
+        font-size: 24px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+    .form-group input {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
